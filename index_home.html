@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Яндекс Дом</title>
+  <link href="/Users/veronika/Documents/entrance-task-2-2/index.css" rel="stylesheet"></link>
+  <link href="/Users/veronika/Documents/entrance-task-2-2/popup_1.css" rel="stylesheet"></link>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <script src="/Users/veronika/Documents/entrance-task-2-2/index.js"></script>
+</head>
+
+<body>
+  <!--   Главное меню сайта -->
+<div class="header">
+  <div class="header_section">
+    <div class="header_item">
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/Яндекс Дом@1x.png">
+    </div>
+    <div class="header_item_black"><a href="#">
+      Сводка</a></div>
+      <div class="header_item_grey"><a href="#">
+        Устройства</a></div>
+        <div class="header_item_grey"><a href="#">
+          Сценарии</a></div>
+  </div>
+</div>
+
+
+<!-- Два основных блока -->
+<div class="section">
+  <!-- Главное -->
+  <div class="main">
+    <a><h1 class="title">Главное</h1></a>
+
+    <!-- Блок с картинкой -->
+    <div class="main-img">
+      <h1>Привет, Геннадий!</h1>
+      <p>Двери и окна закрыты, сигнализация включена.</p>
+
+      <!-- Блок с температурой -->
+      <div class="weather">
+
+        <dl class="home">
+          <dt>Дома</dt>
+          <dd><span>+23</span></dd>
+        </dl>
+
+        <dl class="window">
+          <dt>За окном</dt>
+          <dd><span>+19</span><img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/cloud-drizzle.png"></dd>
+        </dl>
+      </div>
+
+      <!-- Скролящийся блок внутри блока на картинке-->
+      <div class="scrollbar">
+      <div class="scroll_section">
+        <div class="scroll_container">
+        <div class="item_scroll">
+          <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_temperature@1x.png">
+          <div class="item_description">
+            <div class="item_text"><a href="#">Philips Cooler</a></div>
+            <div class="item_subtext"><a href="#">Начнет охлаждать в 16:30</a></div>
+          </div>
+        </div>
+        <div class="item_scroll">
+          <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun_2@1x.png">
+          <div class="item_description">
+            <div class="item_text"><a href="#">Xiaomi Yeelight LED Smart Bulb</a></div>
+            <div class="item_subtext"><a  href="#">Включится в 17:00</a></div>
+          </div>
+        </div>
+        <div class="item_scroll">
+          <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_temperature@1x.png">
+          <div class="item_description">
+            <div class="item_text"><a  href="#">Philips Cooler</a></div>
+            <div class="item_subtext"><a  href="#">Начнет охлаждать в 16:30</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+        </div>
+</div>
+
+
+<!--Правый блок  -->
+  <div class="scenarios">
+    <h1 class="title">Избранные сценарии</h1>
+    <div class="scenarious_container">
+
+      <div class="item_container">
+        <div class="item_description">
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun_2@1x.png">
+        <div class="inform">
+        <div class="item_text">
+          <a href="#">Выключить весь свет в доме и во дворе</a>
+    </div>
+    </div>
+    </div>
+      </div>
+      <div class="item_container">
+        <div class="item_description">
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_scheduled@1x.png">
+        <div class="inform">
+        <div class="item_text">
+        <a href="#">Я ухожу</a>
+      </div>
+    </div>
+    </div>
+      </div>
+      <div class="item_container">
+        <div class="item_description">
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun_2@1x.png">
+        <div class="inform">
+        <div class="item_text">
+        <a href="#">Включить свет в коридоре</a>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div class="item_container">
+        <div class="item_description">
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_temperature_2@1x.png">
+        <div class="inform">
+        <div class="item_text">
+        <a class="link_scenarious" href="#">Набрать горячую ванну</a>
+        </div>
+        <div class="all_2">
+          <a>Начнётся в 18:00</a>
+      </div>
+    </div>
+      </div>
+      </div>
+      <div class="item_container">
+        <div class="item_description">
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_temperature_2@1x.png">
+        <div class="inform">
+        <div class="item_text">
+        <a href="#">Сделать пол тёплым во всей квартире</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Стрелочки для прокрутки -->
+    <div class="scenarious_button">
+      <div>
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/Icons / Arrow Right / M Copy@1x.png">
+      </div>
+      <div>
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/Icons / Arrow Right / M Copy@1x.png" style="transform: rotate(180deg); margin-left:19px; margin-right:20px;">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Меню Избранные сценарии -->
+<div class="devices">
+  <div class="devices_section">
+    <div class="devices_logo ">
+      <div class="item_content">
+      <a href="#">
+      Избранные сценарии</a>
+    </div>
+  </div>
+      <div class="devices_item " style="background:#FFD93E">
+        <div class="item_content">
+        <a href="#">
+        Все</a>
+      </div>
+  </div>
+        <div class="devices_item ">
+          <div class="dev_inform">
+          <a href="#">
+          Кухня</a>
+        </div>
+      </div>
+          <div class="devices_item ">
+            <div class="item_content">
+            <a href="#">
+            Зал</a>
+          </div>
+        </div>
+            <div class="devices_item ">
+              <div class="item_content">
+              <a href="#">
+            Лампочки</a>
+          </div>
+        </div>
+              <div class="devices_item ">
+                <div class="item_content">
+                <a href="#">
+                Камеры</a>
+              </div>
+          </div>
+  </div>
+  <div class="devices_section">
+    <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/Icons / Arrow Right / M Copy@1x.png">
+    </div>
+    <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/Icons / Arrow Right / M Copy@1x.png" style="transform: rotate(180deg); margin-left:19px; margin-right:20px;">
+    </div>
+  </div>
+</div>
+
+<!-- Избранные девайсы иконки -->
+<div class="devices_icon">
+  <div class="container_icon">
+    <div class="icon_content" style="margin-left:0">
+      <div>
+        <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun_2@1x.png">
+        <div class="description">
+        <div class="text"><a class="one" href="#">Xiaomi Yeelight LED Smart Bulb</a></div>
+        <div class="subtext"><a class="two" href="#">Включено</a></div>
+      </div>
+      </div>
+    </div>
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun@1x.png">
+      <div class="description">
+        <div class="text"><a class="one" href="#">D-Link Omna 180 Cam</a></div>
+        <div class="subtext"><a class="two" href="#">Включится в 17:00</a></div>
+      </div>
+      </div>
+    </div>
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_temperature@1x.png">
+      <div class="description">
+        <div class="text"><a class="one" href="javascript:PopUpShow()">Elgato Eve Degree Connected</a></div>
+        <div class="subtext"><a class="two" href="#">Выключено до 17:00</a></div>
+      </div>
+      </div>
+    </div>
+
+
+
+<!-- Это первое поп ап окно -->
+
+    <div class="popup_container" id="popup1" >
+      <div class="popup_big">
+        <div class="popup_content">
+          <div class="popup_tile">
+            <div class="title_text">Elgato Eve Degree Connected</div>
+            <div class="title_temp">
+              <div class="number">+23</div>
+              <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_temperature_2@2x.png">
+            </div>
+          </div>
+          <div class="on">Включено</div>
+
+
+          <div class="popup_menu">
+            <div class="menu_content">
+
+              <div class="menu_container" style="background:#FFD93E; margin-left:0">
+                <div class="menu_text">Вручную</div>
+                </div>
+
+                <div class="menu_container">
+                  <div class="menu_text">Тепло</div>
+                  </div>
+
+                  <div class="menu_container">
+                    <div class="menu_text">Холодно</div>
+                    </div>
+
+                    <div class="menu_container">
+                      <div class="menu_text">Жарко</div>
+                      </div>
+
+            </div>
+          </div>
+
+          <div class="degree">
+            <div class="gradient">
+              <div class="grad_content">
+                <div class="grad_temp">-10</div>
+                <div class="grad_pic"></div>
+                <div class="grad_temp">+30</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="popup_small">
+        <div class="small_content">
+
+          <div class="button_yelow">
+          <div class="button_text">Применить</div>
+        </div>
+
+        <div class="button_white">
+        <div class="button_text"><a href="javascript:PopUpHide()">Закрыть</a></div>
+      </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Закончилось окно -->
+
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun@1x.png">
+      <div class="description">
+        <div class="text"><a class="one" href="#">LIFX Mini Day & Dusk A60 E27</a></div>
+        <div class="subtext"><a class="two" href="#">Включится в 17:00</a></div>
+      </div>
+      </div>
+    </div>
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun_2@1x.png">
+      <div class="description">
+        <div class="text"><a class="one" href="#">Xiaomi Mi Air Purifier 2S</a></div>
+        <div class="subtext"><a class="two" href="#">Включено</a></div>
+      </div>
+      </div>
+    </div>
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun@1x.png">
+      <div class="description">
+        <div class="text"><a class="one" href="#">Philips Zhirui</a></div>
+        <div class="subtext"><a class="two" href="#">Выключено</a></div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun@1x.png">
+      <div class="description">
+        <div class="text"><a class="one" href="#">Philips Zhirui</a></div>
+        <div class="subtext"><a class="two" href="#">Выключено</a></div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="icon_content">
+      <div>
+      <img src="/Users/veronika/Documents/entrance-task-2-2/guide/assets/icon_sun@1x.png">
+      <div class="text_all">
+        <div class="text"><a class="one" href="#">Philips Zhirui</a></div>
+        <div class="subtext"><a class="two" href="#">Выключено</a></div>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<!-- Подвал  -->
+
+<div class="footter">
+  <div class="footter_section">
+    <div class="footter_item_left" style="margin-left:0"><a href="#">Помощь</a></div>
+    <div class="footter_item_left"><a href="#">Обратная связь</a></div>
+    <div class="footter_item_left"><a href="#">Разработчикам</a></div>
+    <div class="footter_item_left"><a href="#">Условия использования</a></div>
+  </div>
+  <div class="footter_section">
+    <div class="footter_item_right">
+      © 2001–2017  ООО «Яндекс»
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
