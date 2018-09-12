@@ -7,7 +7,7 @@
   <link href="index.css" rel="stylesheet">
   <link href="popup_1.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-  <script src="index.js"></script>
+  <script src="index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
       <h1>Привет, Геннадий!</h1>
       <p>Двери и окна закрыты, сигнализация включена.</p>
 
-      <!-- Блок с температурой -->
+
       <div class="weather">
 
         <dl class="home">
@@ -85,7 +85,7 @@
 </div>
 
 
-<!--Правый блок  -->
+<!--Избранные сценарии  -->
   <div class="scenarios">
     <h1 class="title">Избранные сценарии</h1>
     <div class="scenarious_container">
@@ -159,13 +159,13 @@
 </div>
 
 
-<!-- Меню Избранные сценарии -->
+<!--  Избранные устройства -->
 <div class="devices">
   <div class="devices_section">
     <div class="devices_logo ">
       <div class="item_content">
       <a href="#">
-      Избранные сценарии</a>
+      Избранные устройства</a>
     </div>
   </div>
       <div class="devices_item " style="background:#FFD93E">
@@ -216,7 +216,7 @@
       <div>
         <img src="guide/assets/icon_sun_2@1x.png">
         <div class="description">
-        <div class="text"><a class="one" href="#">Xiaomi Yeelight LED Smart Bulb</a></div>
+        <div class="text"><a class="one" class="btn" onclick="modal('myModal')">Xiaomi Yeelight LED Smart Bulb</a></div>
         <div class="subtext"><a class="two" href="#">Включено</a></div>
       </div>
       </div>
@@ -234,7 +234,7 @@
       <div>
       <img src="guide/assets/icon_temperature@1x.png">
       <div class="description">
-        <div class="text"><a class="one" href="javascript:PopUpShow()">Elgato Eve Degree Connected</a></div>
+        <div class="text"><a class="one" class="btn" onclick="modal('myModal2')">Elgato Eve Degree Connected</a></div>
         <div class="subtext"><a class="two" href="#">Выключено до 17:00</a></div>
       </div>
       </div>
@@ -242,75 +242,209 @@
 
 
 
-<!-- Это первое поп ап окно -->
+<!-- Попап 1 -->
 
-    <div class="popup_container" id="popup1" >
-      <div class="popup_big">
-        <div class="popup_content">
-          <div class="popup_tile">
-            <div class="title_text">Elgato Eve Degree Connected</div>
-            <div class="title_temp">
-              <div class="number">+23</div>
-              <img src="guide/assets/icon_temperature_2@2x.png">
-            </div>
+<div id="myModal" class="modal">
+<div class="modalContent">
+<div class="popup_big">
+<div class="popup_content">
+<div class="popup_tile">
+  <div class="title_text">Xiaomi Yeelight LED Smart Bulb</div>
+  <div class="title_temp">
+
+    <img src="guide/assets/icon_sun@2x.png">
+  </div>
+</div>
+<div class="on">Включится в 17:00</div>
+
+
+<div class="popup_menu">
+  <div class="menu_content">
+
+    <div class="menu_container" style="background:#FFD93E; margin-left:0">
+      <div class="menu_text">Вручную</div>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_text">Тепло</div>
+        </div>
+
+        <div class="menu_container">
+          <div class="menu_text">Холодно</div>
           </div>
-          <div class="on">Включено</div>
+
+          <div class="menu_container">
+            <div class="menu_text">Жарко</div>
+            </div>
+
+  </div>
+</div>
+
+<div class="degree">
+  <div class="gradient" style="background-image: linear-gradient(-85deg, #FFE682 2%, #FF9E00 98%)">
+    <div class="grad_content">
+      <div class="grad_temp">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+            <title>icon_sun</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="v1-2-1-home-dashboard" transform="translate(-464.000000, -404.000000)">
+                    <rect  x="0" y="0" width="1366" height="768"></rect>
+                    <g id="status" transform="translate(39.000000, 195.000000)">
+                        <g id="Group" transform="translate(1.000000, 40.000000)">
+                            <g id="Widget-Copy" transform="translate(410.000000, 155.000000)">
+                                <g id="icon" transform="translate(14.000000, 14.000000)">
+                                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                                    <g id="sun" transform="translate(1.000000, 1.000000)" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <circle id="Oval" stroke-opacity="0.4" cx="11" cy="11" r="5"></circle>
+                                        <path d="M11,0 L11,2" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M11,20 L11,22" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M3.22,3.22 L4.64,4.64" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M17.36,17.36 L18.78,18.78" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M0,11 L2,11" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M20,11 L22,11" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M3.22,18.78 L4.64,17.36" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M17.36,4.64 L18.78,3.22" id="Shape" stroke-opacity="0.1"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+      </div>
+      <div class="grad_pic"></div>
+      <div class="grad_temp">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+            <title>icon_sun</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="v1-2-1-home-dashboard" transform="translate(-464.000000, -404.000000)">
+                    <rect  x="0" y="0" width="1366" height="768"></rect>
+                    <g id="status" transform="translate(39.000000, 195.000000)">
+                        <g id="Group" transform="translate(1.000000, 40.000000)">
+                            <g id="Widget-Copy" transform="translate(410.000000, 155.000000)">
+                                <g id="icon" transform="translate(14.000000, 14.000000)">
+                                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                                    <g id="sun" transform="translate(1.000000, 1.000000)" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <circle id="Oval" stroke-opacity="0.4" cx="11" cy="11" r="5"></circle>
+                                        <path d="M11,0 L11,2" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M11,20 L11,22" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M3.22,3.22 L4.64,4.64" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M17.36,17.36 L18.78,18.78" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M0,11 L2,11" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M20,11 L22,11" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M3.22,18.78 L4.64,17.36" id="Shape" stroke-opacity="0.1"></path>
+                                        <path d="M17.36,4.64 L18.78,3.22" id="Shape" stroke-opacity="0.1"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
 
-          <div class="popup_menu">
-            <div class="menu_content">
 
-              <div class="menu_container" style="background:#FFD93E; margin-left:0">
-                <div class="menu_text">Вручную</div>
+<div class="popup_small">
+<div class="small_content">
+
+<div class="button_yelow">
+<div class="button_text">Применить</div>
+</div>
+
+<div class="button_white" class="btn" data-close="true">
+<div class="button_text" >Закрыть</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Конец Попап 1 -->
+
+
+    <!-- Попап 2 -->
+    <div id="myModal2" class="modal">
+  <div class="modalContent ">
+    <div class="popup_big">
+      <div class="popup_content">
+        <div class="popup_tile">
+          <div class="title_text">Elgato Eve Degree Connected</div>
+          <div class="title_temp">
+            <div class="number">+23</div>
+            <img src="guide/assets/icon_temperature_2@2x.png">
+          </div>
+        </div>
+        <div class="on">Включено</div>
+
+
+        <div class="popup_menu">
+          <div class="menu_content">
+
+            <div class="menu_container" style="background:#FFD93E; margin-left:0">
+              <div class="menu_text">Вручную</div>
+              </div>
+
+              <div class="menu_container">
+                <div class="menu_text">Тепло</div>
                 </div>
 
                 <div class="menu_container">
-                  <div class="menu_text">Тепло</div>
+                  <div class="menu_text">Холодно</div>
                   </div>
 
                   <div class="menu_container">
-                    <div class="menu_text">Холодно</div>
+                    <div class="menu_text">Жарко</div>
                     </div>
 
-                    <div class="menu_container">
-                      <div class="menu_text">Жарко</div>
-                      </div>
-
-            </div>
           </div>
+        </div>
 
-          <div class="degree">
-            <div class="gradient">
-              <div class="grad_content">
-                <div class="grad_temp">-10</div>
-                <div class="grad_pic"></div>
-                <div class="grad_temp">+30</div>
-              </div>
+        <div class="degree">
+          <div class="gradient">
+            <div class="grad_content">
+              <div class="grad_temp">-10</div>
+              <div class="grad_pic"></div>
+              <div class="grad_temp">+30</div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-      <div class="popup_small">
-        <div class="small_content">
-
-          <div class="button_yelow">
-          <div class="button_text">Применить</div>
-        </div>
-
-        <div class="button_white">
-        <div class="button_text"><a href="javascript:PopUpHide()">Закрыть</a></div>
-      </div>
-
-
-        </div>
-      </div>
-
-
     </div>
-    <!-- Закончилось окно -->
+
+
+
+    <div class="popup_small">
+      <div class="small_content">
+
+        <div class="button_yelow">
+        <div class="button_text">Применить</div>
+      </div>
+
+      <div class="button_white" class="btn" data-close="true">
+      <div class="button_text">Закрыть</div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Конец Попап 2 -->
 
     <div class="icon_content">
       <div>
